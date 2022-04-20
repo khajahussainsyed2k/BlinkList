@@ -10,7 +10,7 @@ import axios from 'axios';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { useNavigate } from "react-router-dom";
 import MoreHorizTwoToneIcon from '@mui/icons-material/MoreHorizTwoTone';
-interface Props {
+interface BookProps {
   id: number;
   title: string;
   pic: string;
@@ -22,7 +22,7 @@ interface Props {
   page?: string;
 }
 
-const BookCard = (props: Props) => {
+const BookCard = (props: BookProps) => {
   var index = props.id;
   var bookState = props.state;
   const navigate = useNavigate();

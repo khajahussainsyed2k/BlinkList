@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import { createTheme, ThemeProvider } from "@mui/material";
 import { green } from '@mui/material/colors';
 interface ITabProps {
-  child1?: React.ReactNode[]
-  child2?: React.ReactNode[]
+  child1?: React.ReactNode
+  child2?: React.ReactNode
   children?: React.ReactNode
   margin?: number
 }
